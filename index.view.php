@@ -13,14 +13,9 @@
 </head>
 <body>
     <ul>
-
-        <?php foreach($names as $n)  : ?>
-                <li><?= $n; ?></li>
-        <?php endforeach; ?>
-
         <?php
-            foreach($names as $n) {
-                echo "<li>{$n}</li>";
+            foreach ($person as $trait => $val) {
+                echo "<li><strong>{$trait}</strong> {$val}</li>";
             }
         ?>
     </ul>
