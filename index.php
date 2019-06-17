@@ -1,5 +1,5 @@
 <?php
 
-$greeting = "Eric Marty";
+$names = ['Eric','Marty','Cat'];
 
-require "index.view.php";
+require 'index.view.php';

@@ -12,10 +12,17 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>
-            <?php echo $greeting ?>
-        </h1>
-    </header>
+    <ul>
+
+        <?php foreach($names as $n)  : ?>
+                <li><?= $n; ?></li>
+        <?php endforeach; ?>
+
+        <?php
+            foreach($names as $n) {
+                echo "<li>{$n}</li>";
+            }
+        ?>
+    </ul>
 </body>
 </html>
