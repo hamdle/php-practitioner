@@ -13,11 +13,9 @@
 </head>
 <body>
     <ul>
-        <?php
-            foreach ($person as $trait => $val) {
-                echo "<li><strong>{$trait}</strong> {$val}</li>";
-            }
-        ?>
+        <?php if ($task['completed']) : ?>
+            <h2>Task completed.</h2>
+        <?php endif ?>
     </ul>
 </body>
 </html>
